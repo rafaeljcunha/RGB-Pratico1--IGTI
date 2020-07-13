@@ -1,0 +1,146 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #e6e6e6;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#range-value-container {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid white;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px 20px 5px 5px;
+  padding: 10px;
+  background: white;
+}
+
+#range-sliders {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#red,
+#green,
+#blue {
+  margin: 20px;
+}
+
+.show-value-range-box {
+  width: 50px;
+  height: 30px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  margin: 20px 10px 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#color-show {
+  margin-left: 20px;
+  width: 253px;
+  height: 216px;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#red {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  height: 15px;
+  appearance: none;
+  outline: none;
+  border-radius: 10px;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: 1px solid red;
+  background-color: red;
+}
+
+#green {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  height: 15px;
+  appearance: none;
+  outline: none;
+  border-radius: 10px;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: 1px solid green;
+  background-color: green;
+}
+
+#blue {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  height: 15px;
+  outline: none;
+  border-radius: 10px;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: 1px solid blue;
+  background-color: blue;
+}
+
+.custom-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  background: white;
+}
+
+.custom-range::-moz-range-thumb {
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  background: white;
+}
+.custom-range::-ms-thumb {
+  -ms-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  background: white;
+}
+
+@media (max-width: 575.98px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+  }
+  #color-show {
+    margin: 20px 0px;
+  }
+}

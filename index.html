@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <title>RGB - IGTI</title>
+  </head>
+  <body onload="onLoad()">
+    <div id="container">
+      <div id="range-value-container">
+        <div id="range-sliders">
+          <div class="row">
+            <input
+              value="0"
+              type="range"
+              id="red"
+              class="custom-range"
+              min="0"
+              max="255"
+            />
+            <div class="show-value-range-box" id="red-value-box"></div>
+          </div>
+          <div class="row">
+            <input
+              type="range"
+              id="green"
+              class="custom-range"
+              min="0"
+              max="255"
+              value="0"
+            />
+            <div class="show-value-range-box" id="green-value-box"></div>
+          </div>
+          <div class="row">
+            <input
+              type="range"
+              id="blue"
+              class="custom-range"
+              min="0"
+              max="255"
+              value="0"
+            />
+            <div class="show-value-range-box" id="blue-value-box"></div>
+          </div>
+        </div>
+      </div>
+      <div id="color-show"></div>
+    </div>
+
+    <script type="text/javascript" src="scripts.js"></script>
+  </body>
+</html>
